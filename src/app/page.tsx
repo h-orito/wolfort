@@ -94,7 +94,7 @@ export default function TopPage() {
           title='オンライン人狼ポータル'
           description='Web人狼開催情報/統計'
           imagePath='/profile/image/portal.jpeg'
-          href='https://wolfort.dev/wolf-portal'
+          href='https://wolfort.dev/wolf-portal/'
           bordered
         />
         <SiteCard
