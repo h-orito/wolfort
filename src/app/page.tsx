@@ -27,7 +27,6 @@ export default function TopPage() {
             left: '50%',
             margin: 'auto',
             transform: 'translateX(-50%) translateY(-50%)',
-            // fontSize: '8vw',
             lineHeight: '2.5rem',
             textShadow:
               '2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 0px 2px 0 #000,  0 -2px 0 #000, -2px 0 0 #000, 2px 0 0 #000'
@@ -130,6 +129,9 @@ export default function TopPage() {
             趣味でWebサービスを開発・運営している、関東在住のサーバーサイドエンジニアです。
           </p>
           <p className='mt-2'>
+            使用言語: Kotlin, Java, TypeScript, Go, Python, ...etc
+          </p>
+          <p className='mt-2'>
             <Link href='https://github.com/h-orito' target='_blank'>
               GitHub
             </Link>
@@ -141,45 +143,85 @@ export default function TopPage() {
       </p>
       <div className='w-full px-2 md:px-20 text-center'>
         <div className='bg-gray-200 rounded-xl p-4 leading-5'>
-          <p>
-            Twitter(X):&nbsp;
-            <Link href='https://twitter.com/ort_dev' target='_blank'>
-              @ort_dev
-            </Link>
-          </p>
-          <p className='my-2'>
-            運営告知Twitter(X):&nbsp;
-            <Link href='https://twitter.com/ort_dev_notice' target='_blank'>
-              @ort_dev_notice
-            </Link>
-          </p>
-          <p className='mt-2'>Email(★ → @):&nbsp;wolfort★googlegroups.com</p>
+          <p>問い合わせは上から順に返答が得られやすいです。</p>
+          <ul className='leading-6 my-2 inline-block'>
+            <li className='text-left'>
+              Twitter（X）:&nbsp;
+              <Link href='https://twitter.com/ort_dev' target='_blank'>
+                @ort_dev
+              </Link>
+            </li>
+            <li className='text-left'>
+              Bluesky（避難用）:&nbsp;
+              <Link href='https://bsky.app/profile/wolfort.dev' target='_blank'>
+                @wolfort.dev
+              </Link>
+            </li>
+            <li className='text-left'>
+              Email(★ → @):&nbsp;wolfort★googlegroups.com
+            </li>
+          </ul>
+          <hr className='my-4 border-gray-400 mx-4' />
+          <p className='my-2'>以下は問い合わせ先ではありません。</p>
+          <ul className='leading-6 my-2 inline-block'>
+            <li className='text-left'>
+              運営告知Twitter（X）:&nbsp;
+              <Link href='https://twitter.com/ort_dev_notice' target='_blank'>
+                @ort_dev_notice
+              </Link>
+            </li>
+            <li className='text-left'>
+              Mastodon（自動通知）:&nbsp;
+              <Link href='https://mstdn.jp/@ort_dev' target='_blank'>
+                mstdn.jp@ort_dev
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
       <p className='my-10 md:mt-20 md:mb-10 text-2xl'>
         <strong>Donation</strong>
       </p>
       <div className='w-full px-2 md:px-20 text-center'>
-        <div className='bg-gray-200 rounded-xl p-4 leading-5'>
-          <p>
-            <Link
-              href='https://www.amazon.jp/hz/wishlist/ls/1KZSJAJS1ETW4?ref_=wl_share'
-              target='_blank'
-            >
-              ほしいものリスト
-            </Link>
-          </p>
-          <p className='my-2'>
-            <Link href='https://ort.fanbox.cc/' target='_blank'>
-              Pixiv Fanbox
-            </Link>
-          </p>
-          <p className='mt-2'>
-            <Link href='https://www.amazon.co.jp/dp/B004N3APGO' target='_blank'>
-              Amazonギフト券（Eメールタイプ）
-            </Link>
-            <br />※ wolfort★googlegroups.com を指定してください(★ → @)
-          </p>
+        <div className='bg-gray-200 rounded-xl p-4 leading-10'>
+          <ul className='leading-6 my-2'>
+            <li className='my-2'>
+              <Link
+                href='https://www.amazon.jp/hz/wishlist/ls/1KZSJAJS1ETW4?ref_=wl_share'
+                target='_blank'
+              >
+                ほしいものリスト
+              </Link>
+            </li>
+            <li className='my-2'>
+              <Link href='https://ort.fanbox.cc/' target='_blank'>
+                Pixiv Fanbox
+              </Link>
+            </li>
+            <li className='my-2'>
+              <Link
+                href='https://www.amazon.co.jp/dp/B004N3APGO'
+                target='_blank'
+              >
+                Amazonギフト券（Eメールタイプ）
+              </Link>
+              <ul>
+                <li className='text-xs'>
+                  wolfort★googlegroups.com を指定してください(★ → @)
+                </li>
+              </ul>
+            </li>
+            <li className='my-2'>
+              <Link href='https://amzn.to/48auG7Q' target='_blank'>
+                Amazonアソシエイト経由での買い物
+              </Link>
+              <ul>
+                <li className='text-xs'>
+                  このページを経由してAmazonで何かしらの買い物をすると、ortに若干の紹介料が入ります
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
@@ -209,7 +251,7 @@ const SiteCard = (props: SiteCardProps) => {
           }}
         ></div>
         <div
-          className={`absolute z-20 hover:opacity-0 w-full h-full rounded-xl bg-gradient-to-t from-black/80 to-white/5 via-white/5 via-30%`}
+          className={`absolute z-20 w-full h-full rounded-xl bg-gradient-to-t from-black/80 to-white/5 via-white/5 via-30%`}
         ></div>
         <div className='absolute z-30 text-white bottom-1 p-4'>
           <p className='text-lg'>{props.title}</p>
