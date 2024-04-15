@@ -7,14 +7,14 @@ export default function TopPage() {
       <title>wolfort</title>
       <div className='relative block w-full items-center justify-between text-sm'>
         <Image
-          src='/image/header.png'
+          src='/profile/image/header.png'
           alt='header'
           className='hidden md:block dark:invert w-full h-screen object-cover'
           width='1194'
           height='627'
         />
         <Image
-          src='/image/header-sm.png'
+          src='/profile/image/header-sm.png'
           alt='header'
           className='md:hidden dark:invert w-full h-screen object-cover'
           width='1280'
@@ -44,78 +44,78 @@ export default function TopPage() {
         <SiteCard
           title='ロールをプレイ！'
           description='ロールプレイ'
-          imagePath='/image/chat-role-play.webp'
+          imagePath='/profile/image/chat-role-play.webp'
           href='https://wolfort.dev/chat-role-play'
           bordered
         />
         <SiteCard
           title='Scenario Tuker'
           description='マダミス/TRPG通過記録'
-          imagePath='/image/scenario-tuker.webp'
+          imagePath='/profile/image/scenario-tuker.webp'
           href='https://scenario-tuker.netlify.app'
         />
         <SiteCard
           title='WOLF MANSION'
           description='足音人狼'
-          imagePath='/image/wolf-mansion.png'
+          imagePath='/profile/image/wolf-mansion.png'
           href='https://wolfort.net/wolf-mansion'
         />
         <SiteCard
           title='WOLF MANSION Analyzer'
           description='WOLF MANSION推理補助'
-          imagePath='/image/wolf-mansion-analyzer.png'
+          imagePath='/profile/image/wolf-mansion-analyzer.png'
           href='https://wolf-mansion-analyzer.netlify.app'
         />
         <SiteCard
           title='HOWLING WOLF'
           description='野良長期人狼'
-          imagePath='/image/howling-wolf.jpg'
+          imagePath='/profile/image/howling-wolf.jpg'
           href='https://howling-wolf.com'
         />
         <SiteCard
           title='FIREWOLF'
           description='身内長期人狼'
-          imagePath='/image/firewolf.jpg'
+          imagePath='/profile/image/firewolf.jpg'
           href='https://firewolf.netlify.app'
         />
         <SiteCard
           title='LASTWOLF'
           description='身内短期人狼'
-          imagePath='/image/lastwolf.jpg'
+          imagePath='/profile/image/lastwolf.jpg'
           href='https://lastwolf.netlify.app'
         />
         <SiteCard
           title='ワードウルフオンライン'
           description='ワードウルフ'
-          imagePath='/image/wordwolf.png'
+          imagePath='/profile/image/wordwolf.png'
           href='https://wordwolf-online.com'
           bordered
         />
         <SiteCard
           title='オンライン人狼ポータル'
           description='Web人狼開催情報/統計'
-          imagePath='/image/portal.jpeg'
+          imagePath='/profile/image/portal.jpeg'
           href='https://wolfort.dev/wolf-portal'
           bordered
         />
         <SiteCard
           title='わーどるめーかー'
           description='オリジナルWordle作成'
-          imagePath='/image/wordle.png'
+          imagePath='/profile/image/wordle.png'
           href='https://wordle-maker.vercel.app/'
           bordered
         />
         <SiteCard
           title='配置するやつメーカー'
           description='ポジショニングマップ'
-          imagePath='/image/positioning.png'
+          imagePath='/profile/image/positioning.png'
           href='https://wolfort.dev/positioning-map'
           bordered
         />
         <SiteCard
           title='ortの灰ログ'
           description='ブログ'
-          imagePath='/image/blog.png'
+          imagePath='/profile/image/blog.png'
           href='https://oritone.hatenablog.com/'
           bordered
         />
