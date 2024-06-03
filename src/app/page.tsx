@@ -57,7 +57,7 @@ export default function TopPage() {
           title='WOLF MANSION'
           description='足音人狼'
           imagePath='/profile/image/wolf-mansion.png'
-          href='https://wolfort.net/wolf-mansion'
+          href='https://wolfort.net/wolf-mansion/'
         />
         <SiteCard
           title='WOLF MANSION Analyzer'
