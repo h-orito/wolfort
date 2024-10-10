@@ -9,14 +9,14 @@ export default function TopPage() {
         <Image
           src='/profile/image/header.png'
           alt='header'
-          className='hidden md:block dark:invert w-full h-screen object-cover'
+          className='hidden md:block w-full h-screen object-cover'
           width='1194'
           height='627'
         />
         <Image
           src='/profile/image/header-sm.png'
           alt='header'
-          className='md:hidden dark:invert w-full h-screen object-cover'
+          className='md:hidden w-full h-screen object-cover'
           width='1280'
           height='853'
         />
