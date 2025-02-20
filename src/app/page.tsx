@@ -51,7 +51,7 @@ export default function TopPage() {
           title='Scenario Tuker'
           description='マダミス/TRPG通過記録'
           imagePath='/profile/image/scenario-tuker.webp'
-          href='https://scenario-tuker.netlify.app'
+          href='https://wolfort.dev/scenario-tuker'
         />
         <SiteCard
           title='WOLF MANSION'
