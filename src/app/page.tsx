@@ -178,8 +178,8 @@ export default function TopPage() {
       <div className='mt-6 w-full px-2 md:px-20 text-center'>
         <div className='bg-gray-200 rounded-xl p-4 leading-5'>
           技術スタック
-          <div className='mt-4 flex justify-center'>
-            <table className='table-auto border-collapse border border-gray-400 overflow-x-auto'>
+          <div className='mt-4 flex lg:justify-center overflow-x-auto'>
+            <table className='table-auto border-collapse border border-gray-400 '>
               <thead>
                 <tr>
                   <th className='px-4 py-2 border border-gray-400'>Service</th>
