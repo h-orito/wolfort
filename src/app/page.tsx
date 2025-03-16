@@ -35,7 +35,63 @@ export default function TopPage() {
           WOLFORT
         </div>
       </div>
-
+      <p className='my-10 md:mt-20 md:mb-10 text-2xl'>
+        <strong>Profile</strong>
+      </p>
+      <div className='w-full px-2 md:px-20 text-center'>
+        <div className='bg-gray-200 rounded-xl p-4 leading-5'>
+          <p className='mb-2'>Name: ort</p>
+          <p className='mt-2'>
+            趣味でWebサービスを開発・運営している、関東在住のITエンジニアです。
+          </p>
+          <p className='mt-2'>
+            <Link href='https://github.com/h-orito' target='_blank'>
+              GitHub
+            </Link>
+          </p>
+        </div>
+      </div>
+      <p className='my-10 md:mt-20 md:mb-10 text-2xl'>
+        <strong>Contact</strong>
+      </p>
+      <div className='w-full px-2 md:px-20 text-center'>
+        <div className='bg-gray-200 rounded-xl p-4 leading-5'>
+          <p>問い合わせは上から順に返答が得られやすいです。</p>
+          <ul className='leading-6 my-2 inline-block'>
+            <li className='text-left'>
+              Twitter（X）:&nbsp;
+              <Link href='https://twitter.com/ort_dev' target='_blank'>
+                @ort_dev
+              </Link>
+            </li>
+            <li className='text-left'>
+              Bluesky（避難用）:&nbsp;
+              <Link href='https://bsky.app/profile/wolfort.dev' target='_blank'>
+                @wolfort.dev
+              </Link>
+            </li>
+            <li className='text-left'>
+              Email(★ → @):&nbsp;wolfort★googlegroups.com
+            </li>
+          </ul>
+          <hr className='my-4 border-gray-400 mx-4' />
+          <p className='my-2'>以下は問い合わせ先ではありません。</p>
+          <ul className='leading-6 my-2 inline-block'>
+            <li className='text-left'>
+              運営告知Twitter（X）:&nbsp;
+              <Link href='https://twitter.com/ort_dev_notice' target='_blank'>
+                @ort_dev_notice
+              </Link>
+            </li>
+            <li className='text-left'>
+              Mastodon（自動通知）:&nbsp;
+              <Link href='https://mstdn.jp/@ort_dev' target='_blank'>
+                mstdn.jp@ort_dev
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>{' '}
       <p className='my-10 md:mt-20 mb-10 text-2xl'>
         <strong>Websites</strong>
       </p>
@@ -119,64 +175,363 @@ export default function TopPage() {
           bordered
         />
       </div>
-      <p className='my-10 md:mt-20 md:mb-10 text-2xl'>
-        <strong>Profile</strong>
-      </p>
-      <div className='w-full px-2 md:px-20 text-center'>
+      <div className='mt-6 w-full px-2 md:px-20 text-center'>
         <div className='bg-gray-200 rounded-xl p-4 leading-5'>
-          <p className='mb-2'>Name: ort</p>
-          <p className='mt-2'>
-            趣味でWebサービスを開発・運営している、関東在住のサーバーサイドエンジニアです。
-          </p>
-          <p className='mt-2'>
-            使用言語: Kotlin, Java, TypeScript, Go, Python, ...etc
-          </p>
-          <p className='mt-2'>
-            <Link href='https://github.com/h-orito' target='_blank'>
-              GitHub
-            </Link>
-          </p>
-        </div>
-      </div>
-      <p className='my-10 md:mt-20 md:mb-10 text-2xl'>
-        <strong>Contact</strong>
-      </p>
-      <div className='w-full px-2 md:px-20 text-center'>
-        <div className='bg-gray-200 rounded-xl p-4 leading-5'>
-          <p>問い合わせは上から順に返答が得られやすいです。</p>
-          <ul className='leading-6 my-2 inline-block'>
-            <li className='text-left'>
-              Twitter（X）:&nbsp;
-              <Link href='https://twitter.com/ort_dev' target='_blank'>
-                @ort_dev
-              </Link>
-            </li>
-            <li className='text-left'>
-              Bluesky（避難用）:&nbsp;
-              <Link href='https://bsky.app/profile/wolfort.dev' target='_blank'>
-                @wolfort.dev
-              </Link>
-            </li>
-            <li className='text-left'>
-              Email(★ → @):&nbsp;wolfort★googlegroups.com
-            </li>
-          </ul>
-          <hr className='my-4 border-gray-400 mx-4' />
-          <p className='my-2'>以下は問い合わせ先ではありません。</p>
-          <ul className='leading-6 my-2 inline-block'>
-            <li className='text-left'>
-              運営告知Twitter（X）:&nbsp;
-              <Link href='https://twitter.com/ort_dev_notice' target='_blank'>
-                @ort_dev_notice
-              </Link>
-            </li>
-            <li className='text-left'>
-              Mastodon（自動通知）:&nbsp;
-              <Link href='https://mstdn.jp/@ort_dev' target='_blank'>
-                mstdn.jp@ort_dev
-              </Link>
-            </li>
-          </ul>
+          技術スタック
+          <div className='mt-4 flex justify-center'>
+            <table className='table-auto border-collapse border border-gray-400 overflow-x-auto'>
+              <thead>
+                <tr>
+                  <th className='px-4 py-2 border border-gray-400'>Service</th>
+                  <th className='px-4 py-2 border border-gray-400'>
+                    Technology stack
+                  </th>
+                  <th className='px-4 py-2 border border-gray-400'>Infra</th>
+                  <th className='px-4 py-2 border border-gray-400'>Source</th>
+                  <th className='px-4 py-2 border border-gray-400'>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    ロールをプレイ！
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>Next.js</li>
+                      <li>React.js</li>
+                      <li>TailwindCSS</li>
+                      <li>Go</li>
+                      <li>Gorm</li>
+                      <li>GraphQL</li>
+                      <li>MySQL</li>
+                      <li>Cloudflare R2</li>
+                      <li>Auth0</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Kubernetes
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/chat-role-play-graphql'
+                      target='_blank'
+                    >
+                      GitHub
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Scenario Tuker
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>Next.js</li>
+                      <li>React.js</li>
+                      <li>TailwindCSS</li>
+                      <li>Kotlin</li>
+                      <li>Spring Boot</li>
+                      <li>DBFlute</li>
+                      <li>MySQL</li>
+                      <li>Firebase Authentication</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Kubernetes
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/scenario-tuker'
+                      target='_blank'
+                    >
+                      GitHub(Frontend)
+                    </Link>
+                    <br />
+                    <Link
+                      href='https://github.com/h-orito/scenario-tuker-api'
+                      target='_blank'
+                    >
+                      GitHub(Backend)
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Nuxt.js(2)→Next.js, Netlify→Kubernetes移行
+                  </td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    WOLF MANSION
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>Kotlin</li>
+                      <li>Spring Boot</li>
+                      <li>DBFlute</li>
+                      <li>MySQL</li>
+                      <li>Thymeleaf</li>
+                      <li>JavaScript</li>
+                      <li>Microsoft Translator API</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    さくらVPS, Kubernetes
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/wolf-mansion'
+                      target='_blank'
+                    >
+                      GitHub
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Maven→Gradle、Java→Kotlin
+                  </td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    WOLF MANSION Analyzer
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>Vue3</li>
+                      <li>Nuxt.js(v3)</li>
+                      <li>PrimeVue/Flex</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>Netlify</td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/wolf-mansion-analyzer'
+                      target='_blank'
+                    >
+                      GitHub
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    HOWLING WOLF
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>Vue2</li>
+                      <li>Nuxt.js(v2)</li>
+                      <li>Buefy</li>
+                      <li>Kotlin</li>
+                      <li>Spring Boot</li>
+                      <li>DBFlute</li>
+                      <li>MySQL</li>
+                      <li>Firebase Authentication</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Netlify, Kubernetes
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/howling-wolf-ui'
+                      target='_blank'
+                    >
+                      GitHub(Frontend)
+                    </Link>
+                    <br />
+                    <Link
+                      href='https://github.com/h-orito/howling-wolf-api'
+                      target='_blank'
+                    >
+                      GitHub(Backend)
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>FIREWOLF</td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>Vue2</li>
+                      <li>Nuxt.js(v2)</li>
+                      <li>Buefy</li>
+                      <li>Kotlin</li>
+                      <li>Spring Boot</li>
+                      <li>DBFlute</li>
+                      <li>MySQL</li>
+                      <li>Firebase Authentication</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Netlify, Kubernetes
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/firewolf-ui'
+                      target='_blank'
+                    >
+                      GitHub(Frontend)
+                    </Link>
+                    <br />
+                    <Link
+                      href='https://github.com/h-orito/firewolf-api'
+                      target='_blank'
+                    >
+                      GitHub(Backend)
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>LASTWOLF</td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>Vue2</li>
+                      <li>Nuxt.js(v2)</li>
+                      <li>Buefy</li>
+                      <li>Kotlin</li>
+                      <li>Spring Boot</li>
+                      <li>DBFlute</li>
+                      <li>MySQL</li>
+                      <li>Firebase Authentication</li>
+                      <li>Firebase Realtime Database</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Netlify, Kubernetes
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/lastwolf-ui'
+                      target='_blank'
+                    >
+                      GitHub(Frontend)
+                    </Link>
+                    <br />
+                    <Link
+                      href='https://github.com/h-orito/lastwolf-api'
+                      target='_blank'
+                    >
+                      GitHub(Backend)
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    ワードウルフオンライン
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>JavaScript</li>
+                      <li>Vue2</li>
+                      <li>Nuxt.js(v2)</li>
+                      <li>Firebase Authentication</li>
+                      <li>Firebase Realtime Database</li>
+                      <li>Cloud Firestore</li>
+                      <li>Cloud functions for Firebase</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>Netlify</td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/wordwolf'
+                      target='_blank'
+                    >
+                      GitHub
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    オンライン人狼ポータル
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>Kotlin</li>
+                      <li>Spring Boot</li>
+                      <li>DBFlute</li>
+                      <li>MySQL</li>
+                      <li>Thymeleaf</li>
+                      <li>JavaScript</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Kubernetes
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/wolf-portal'
+                      target='_blank'
+                    >
+                      GitHub
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Java→Kotlin
+                  </td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    わーどるめーかー
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>React.js</li>
+                      <li>Next.js</li>
+                      <li>TailwindCSS</li>
+                      <li>Firebase Authentication</li>
+                      <li>Firebase Realtime Database</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>Vercel</td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/wordron'
+                      target='_blank'
+                    >
+                      GitHub
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    配置するやつメーカー
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>React.js</li>
+                      <li>Next.js</li>
+                      <li>TailwindCSS</li>
+                      <li>Firebase Realtime Database</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Kubernetes
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/quadrant-maker'
+                      target='_blank'
+                    >
+                      GitHub
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <p className='my-10 md:mt-20 md:mb-10 text-2xl'>
