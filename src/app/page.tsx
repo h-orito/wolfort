@@ -430,8 +430,8 @@ export default function TopPage() {
                   <td className='border px-4 py-2 border-gray-400'>
                     <ul className='text-left list-disc ml-2'>
                       <li>JavaScript</li>
-                      <li>Vue2</li>
-                      <li>Nuxt.js(v2)</li>
+                      <li>Vue3</li>
+                      <li>Nuxt.js(v4)</li>
                       <li>Firebase Authentication</li>
                       <li>Firebase Realtime Database</li>
                       <li>Cloud Firestore</li>
@@ -447,7 +447,9 @@ export default function TopPage() {
                       GitHub
                     </Link>
                   </td>
-                  <td className='border px-4 py-2 border-gray-400'></td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Nuxt v2→v4移行
+                  </td>
                 </tr>
                 <tr>
                   <td className='border px-4 py-2 border-gray-400'>
