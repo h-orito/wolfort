@@ -97,6 +97,13 @@ export default function TopPage() {
       </p>
       <div className='w-full px-2 md:px-20 grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-3'>
         <SiteCard
+          title='Besten'
+          description='10選作成・共有'
+          imagePath='/profile/image/besten.png'
+          href='https://besten.wolfort.dev'
+          bordered
+        />
+        <SiteCard
           title='ロールをプレイ！'
           description='ロールプレイ'
           imagePath='/profile/image/chat-role-play.webp'
@@ -192,6 +199,28 @@ export default function TopPage() {
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Besten
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>React.js</li>
+                      <li>React Router</li>
+                      <li>TailwindCSS</li>
+                      <li>Cloudflare Workers</li>
+                      <li>Cloudflare D1</li>
+                      <li>Drizzle</li>
+                      <li>Remix Auth</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Cloudflare
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
                 <tr>
                   <td className='border px-4 py-2 border-gray-400'>
                     ロールをプレイ！
@@ -357,9 +386,9 @@ export default function TopPage() {
                   <td className='border px-4 py-2 border-gray-400'>
                     <ul className='text-left list-disc ml-2'>
                       <li>TypeScript</li>
-                      <li>Vue2</li>
-                      <li>Nuxt.js(v2)</li>
-                      <li>Buefy</li>
+                      <li>Vue3</li>
+                      <li>Nuxt.js(v4)</li>
+                      <li>TailwindCSS</li>
                       <li>Kotlin</li>
                       <li>Spring Boot</li>
                       <li>DBFlute</li>
@@ -385,7 +414,9 @@ export default function TopPage() {
                       GitHub(Backend)
                     </Link>
                   </td>
-                  <td className='border px-4 py-2 border-gray-400'></td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Nuxt v2→v4移行
+                  </td>
                 </tr>
                 <tr>
                   <td className='border px-4 py-2 border-gray-400'>LASTWOLF</td>
