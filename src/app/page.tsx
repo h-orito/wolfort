@@ -423,9 +423,9 @@ export default function TopPage() {
                   <td className='border px-4 py-2 border-gray-400'>
                     <ul className='text-left list-disc ml-2'>
                       <li>TypeScript</li>
-                      <li>Vue2</li>
-                      <li>Nuxt.js(v2)</li>
-                      <li>Buefy</li>
+                      <li>Vue3</li>
+                      <li>Nuxt.js(v4)</li>
+                      <li>TailwindCSS</li>
                       <li>Kotlin</li>
                       <li>Spring Boot</li>
                       <li>DBFlute</li>
@@ -452,7 +452,7 @@ export default function TopPage() {
                       GitHub(Backend)
                     </Link>
                   </td>
-                  <td className='border px-4 py-2 border-gray-400'></td>
+                  <td className='border px-4 py-2 border-gray-400'>Nuxt v2→v4移行</td>
                 </tr>
                 <tr>
                   <td className='border px-4 py-2 border-gray-400'>
