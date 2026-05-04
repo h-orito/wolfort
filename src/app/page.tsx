@@ -43,6 +43,8 @@ export default function TopPage() {
           <p className='mb-2'>Name: ort</p>
           <p className='mt-2'>
             趣味でWebサービスを開発・運営している、関東在住のITエンジニアです。
+            <br />
+            本業はバックエンド側なので、フロントエンドは独学で勉強しながらやっています。
           </p>
           <p className='mt-2'>
             <Link href='https://github.com/h-orito' target='_blank'>
@@ -206,9 +208,7 @@ export default function TopPage() {
               </thead>
               <tbody>
                 <tr>
-                  <td className='border px-4 py-2 border-gray-400'>
-                    Besten
-                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>Besten</td>
                   <td className='border px-4 py-2 border-gray-400'>
                     <ul className='text-left list-disc ml-2'>
                       <li>TypeScript</li>
@@ -412,7 +412,9 @@ export default function TopPage() {
                       GitHub(Backend)
                     </Link>
                   </td>
-                  <td className='border px-4 py-2 border-gray-400'>Nuxt v2→v4移行</td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Nuxt v2→v4移行
+                  </td>
                 </tr>
                 <tr>
                   <td className='border px-4 py-2 border-gray-400'>FIREWOLF</td>
@@ -485,7 +487,9 @@ export default function TopPage() {
                       GitHub(Backend)
                     </Link>
                   </td>
-                  <td className='border px-4 py-2 border-gray-400'>Nuxt v2→v4移行</td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Nuxt v2→v4移行
+                  </td>
                 </tr>
                 <tr>
                   <td className='border px-4 py-2 border-gray-400'>
