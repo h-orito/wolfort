@@ -129,6 +129,12 @@ export default function TopPage() {
           href='https://wolf-mansion-analyzer.netlify.app'
         />
         <SiteCard
+          title='人狼館の事件簿 GMツール'
+          description='WOLF MANSION GM支援'
+          imagePath='/profile/image/wolf-mansion-gm-tools.jpeg'
+          href='https://wolf-mansion-gm-tool.wolfort.dev/'
+        />
+        <SiteCard
           title='HOWLING WOLF'
           description='野良長期人狼'
           imagePath='/profile/image/howling-wolf.jpg'
@@ -337,6 +343,33 @@ export default function TopPage() {
                   <td className='border px-4 py-2 border-gray-400'>
                     <Link
                       href='https://github.com/h-orito/wolf-mansion-analyzer'
+                      target='_blank'
+                    >
+                      GitHub
+                    </Link>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'></td>
+                </tr>
+                <tr>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    人狼館の事件簿 GMツール
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <ul className='text-left list-disc ml-2'>
+                      <li>TypeScript</li>
+                      <li>React.js</li>
+                      <li>React Router</li>
+                      <li>TailwindCSS</li>
+                      <li>Cloudflare Workers</li>
+                      <li>Cloudflare D1</li>
+                    </ul>
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    Cloudflare
+                  </td>
+                  <td className='border px-4 py-2 border-gray-400'>
+                    <Link
+                      href='https://github.com/h-orito/wolf-mansion-gm-tool'
                       target='_blank'
                     >
                       GitHub
