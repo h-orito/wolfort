@@ -16,18 +16,20 @@ wolfortはポートフォリオ/プロフィールサイトです。運営して
 
 ## Commands
 
+パッケージマネージャは pnpm を使用します。
+
 ```bash
 # 開発サーバー起動
-npm run dev
+pnpm dev
 
 # プロダクションビルド
-npm run build
+pnpm build
 
 # プロダクションサーバー起動
-npm run start
+pnpm start
 
 # Lint実行
-npm run lint
+pnpm lint
 ```
 
 ## Project Structure
