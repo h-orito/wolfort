@@ -2,8 +2,8 @@ FROM node:24-bookworm
 
 WORKDIR /app
 
-# pnpmをインストール
-RUN corepack enable && corepack prepare pnpm@latest --activate
+# pnpmをインストール (バージョンは package.json の packageManager フィールドで固定)
+RUN corepack enable && corepack prepare pnpm@10.33.0 --activate
 
 # Install dependencies based on the preferred package manager
 COPY src src
