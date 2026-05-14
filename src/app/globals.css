@@ -2,23 +2,115 @@
 @tailwind components;
 @tailwind utilities;
 
-.card {
-  overflow: hidden;
-  height: 300px;
-}
-.card:hover {
-  border-radius: 0.75rem;
-}
-.card-image {
-  transition: transform 0.5s ease;
-}
-.card:hover .card-image {
-  transform: scale(1.2, 1.2);
+:root {
+  --color-ink: 10 12 18;
+  --color-midnight: 17 21 31;
+  --color-slate: 22 28 42;
+  --color-slate-line: 35 42 58;
+  --color-bone: 228 232 238;
+  --color-moon: 181 193 209;
+  --color-muted: 110 122 143;
+  --color-accent: 122 176 224;
+  --color-accent-dim: 77 122 168;
 }
 
-@layer components {
-  a {
-    @apply text-blue-500;
-    text-decoration: none;
+::selection {
+  background: rgb(var(--color-accent));
+  color: rgb(var(--color-ink));
+}
+
+/* Fraunces variable axis presets */
+.display-hero {
+  font-optical-sizing: auto;
+  font-variation-settings:
+    'opsz' 144,
+    'SOFT' 40,
+    'WONK' 0;
+}
+.display-section {
+  font-optical-sizing: auto;
+  font-variation-settings:
+    'opsz' 72,
+    'SOFT' 30,
+    'WONK' 0;
+}
+.display-card {
+  font-optical-sizing: auto;
+  font-variation-settings:
+    'opsz' 48,
+    'SOFT' 25,
+    'WONK' 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-feature-settings: 'ss01', 'cv11';
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+a:hover {
+  color: var(--color-bone);
+}
+
+/* Marquee */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.marquee-left {
+  animation: marquee-left 80s linear infinite;
+  width: max-content;
+}
+.marquee-right {
+  animation: marquee-right 80s linear infinite;
+  width: max-content;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-left,
+  .marquee-right {
+    animation: none;
+  }
+}
+
+/* Film grain noise overlay */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 200px 200px;
+}
+
+/* Thin separator line */
+.hairline {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: rgb(var(--color-slate-line));
+  border: 0;
 }
