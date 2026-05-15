@@ -6,21 +6,17 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
-  packages: write
-
 jobs:
-  delivery:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-24.04-arm
+    permissions:
+      contents: read
+      packages: write
     env:
       IMAGE_NAME: wolfort
     steps:
       - name: clone repository
         uses: actions/checkout@v4
-
-      - name: set up QEMU
-        uses: docker/setup-qemu-action@v3
 
       - name: set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -39,3 +35,15 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: ghcr.io/h-orito/${{ env.IMAGE_NAME }}:latest
+
+  deploy:
+    needs: build
+    runs-on: [self-hosted, k8s]
+    steps:
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v4
+        with:
+          version: latest
+
+      - name: Restart deployment
+        run: kubectl rollout restart deployment/wolfort -n default
