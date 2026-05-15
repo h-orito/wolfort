@@ -58,12 +58,8 @@ export const PROJECTS: Project[] = [
     infra: 'Kubernetes',
     repos: [
       {
-        label: 'Frontend',
+        label: 'GitHub',
         href: 'https://github.com/h-orito/scenario-tuker'
-      },
-      {
-        label: 'Backend',
-        href: 'https://github.com/h-orito/scenario-tuker-api'
       }
     ],
     notes: 'Nuxt.js(2)→Next.js, Netlify→Kubernetes移行'
@@ -87,8 +83,7 @@ export const PROJECTS: Project[] = [
     ],
     infra: 'Netlify, Kubernetes',
     repos: [
-      { label: 'Frontend', href: 'https://github.com/h-orito/howling-wolf-ui' },
-      { label: 'Backend', href: 'https://github.com/h-orito/howling-wolf-api' }
+      { label: 'GitHub', href: 'https://github.com/h-orito/howling-wolf' }
     ],
     notes: 'Nuxt v2→v4移行'
   },
@@ -181,10 +176,7 @@ export const PROJECTS: Project[] = [
     started: '2020/08',
     stack: ['TypeScript', 'Nuxt.js', 'Kotlin', 'Spring Boot', 'Firebase Auth'],
     infra: 'Netlify, Kubernetes',
-    repos: [
-      { label: 'Frontend', href: 'https://github.com/h-orito/firewolf-ui' },
-      { label: 'Backend', href: 'https://github.com/h-orito/firewolf-api' }
-    ],
+    repos: [{ label: 'GitHub', href: 'https://github.com/h-orito/firewolf' }],
     notes: 'Nuxt v2→v4移行'
   },
   {
@@ -203,10 +195,7 @@ export const PROJECTS: Project[] = [
       'Firebase Realtime DB'
     ],
     infra: 'Netlify, Kubernetes',
-    repos: [
-      { label: 'Frontend', href: 'https://github.com/h-orito/lastwolf-ui' },
-      { label: 'Backend', href: 'https://github.com/h-orito/lastwolf-api' }
-    ],
+    repos: [{ label: 'GitHub', href: 'https://github.com/h-orito/lastwolf' }],
     notes: 'Nuxt v2→v4移行'
   },
   {
