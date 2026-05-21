@@ -79,7 +79,7 @@ export default function ScrollingHeader() {
         </h1>
         <p className='mt-8 font-mono text-[11px] tracking-[0.25em] text-moon md:mt-12 md:text-[13px]'>
           <span className='uppercase tracking-[0.35em]'>
-            selected projects by
+            by
           </span>
           <span className='ml-2'>ort</span>
         </p>

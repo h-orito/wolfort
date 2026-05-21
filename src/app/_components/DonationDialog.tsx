@@ -77,11 +77,8 @@ export default function DonationDialog() {
           </div>
           <hr className='hairline mt-3' />
 
-          <h3 className='mt-6 font-display text-2xl text-bone md:text-3xl'>
-            Support <span className='italic'>this lab.</span>
-          </h3>
           <p className='mt-3 text-sm text-moon'>
-            応援していただける方は以下からどうぞ。
+            応援していただける方は以下からお願いします。
           </p>
 
           <ul className='mt-6 flex flex-col'>

@@ -12,7 +12,7 @@ import { FEATURED, INDEX_PROJECTS, PROJECTS } from './_data/projects'
 export default function TopPage() {
   return (
     <main className='flex min-h-screen flex-col bg-ink text-bone'>
-      <title>wolfort — selected projects by ort</title>
+      <title>wolfort</title>
       <ScrollingHeader />
 
       <div className='mx-auto flex w-full max-w-6xl flex-col gap-32 px-6 pt-24 md:gap-40 md:px-12 md:pt-32'>
