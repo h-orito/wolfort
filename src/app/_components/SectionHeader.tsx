@@ -4,7 +4,7 @@ type Props = {
   children: React.ReactNode
 }
 
-export default function SectionHeader({ number, label, children }: Props) {
+export default function SectionHeader({ number, label }: Props) {
   return (
     <div className='w-full'>
       <div className='flex items-baseline font-mono text-[10px] uppercase tracking-[0.3em] text-muted md:text-xs'>

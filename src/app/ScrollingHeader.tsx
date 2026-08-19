@@ -1,19 +1,19 @@
 const IMAGES = [
-  '/profile/image/besten.png',
-  '/profile/image/chat-role-play.webp',
-  '/profile/image/scenario-tuker.webp',
-  '/profile/image/wolf-mansion.png',
-  '/profile/image/wolf-mansion-analyzer.png',
-  '/profile/image/wolf-mansion-gm-tools.jpeg',
-  '/profile/image/howling-wolf.jpg',
-  '/profile/image/firewolf.jpg',
-  '/profile/image/lastwolf.jpg',
-  '/profile/image/wolfbbs-stats.jpeg',
-  '/profile/image/wordwolf.png',
-  '/profile/image/portal.jpeg',
-  '/profile/image/wordle.png',
-  '/profile/image/positioning.png',
-  '/profile/image/blog.png'
+  '/image/besten.png',
+  '/image/chat-role-play.webp',
+  '/image/scenario-tuker.webp',
+  '/image/wolf-mansion.png',
+  '/image/wolf-mansion-analyzer.png',
+  '/image/wolf-mansion-gm-tools.jpeg',
+  '/image/howling-wolf.jpg',
+  '/image/firewolf.jpg',
+  '/image/lastwolf.jpg',
+  '/image/wolfbbs-stats.jpeg',
+  '/image/wordwolf.png',
+  '/image/portal.jpeg',
+  '/image/wordle.png',
+  '/image/positioning.png',
+  '/image/blog.png'
 ]
 
 const HALF = Math.floor(IMAGES.length / 2)

@@ -8,8 +8,8 @@ wolfortはポートフォリオ/プロフィールサイトです。運営して
 
 ## Tech Stack
 
-- Next.js 14.2.1 (App Router)
-- React 18
+- Next.js 15 (App Router, `output: 'export'` による静的エクスポート)
+- React 19
 - TypeScript 5
 - TailwindCSS 3.4
 - ESLint + Prettier
@@ -22,11 +22,14 @@ wolfortはポートフォリオ/プロフィールサイトです。運営して
 # 開発サーバー起動
 pnpm dev
 
-# プロダクションビルド
+# プロダクションビルド（out/ に静的エクスポート）
 pnpm build
 
-# プロダクションサーバー起動
-pnpm start
+# ビルド結果をローカルで配信（wrangler dev）
+pnpm preview
+
+# Cloudflare Workersへ手動デプロイ（pnpm deploy はビルトインと衝突するため run 必須）
+pnpm run deploy
 
 # Lint実行
 pnpm lint
@@ -38,11 +41,12 @@ pnpm lint
   - `layout.tsx` - ルートレイアウト
   - `page.tsx` - トップページ（プロフィール、連絡先、Webサイト一覧を表示）
   - `globals.css` - グローバルスタイル（Tailwindベース + カードホバーアニメーション）
-- `public/profile/image/` - サイトで使用する画像
+- `public/image/` - サイトで使用する画像
 
 ## Configuration Notes
 
-- `next.config.mjs`: basePath が `/profile` に設定されている（wolfort.devのサブパスとしてデプロイされるため）
+- `next.config.mjs`: `output: 'export'` で静的エクスポート（basePathなし、profile.wolfort.dev で配信）
+- `wrangler.jsonc`: Cloudflare Workers Static Assets 設定（`out/` を配信、カスタムドメイン profile.wolfort.dev）
 - パスエイリアス: `@/*` → `./src/*`
 
 ## Code Style
@@ -55,4 +59,4 @@ pnpm lint
 
 ## Deployment
 
-GitHub Actions経由でself-hostedランナーを使用し、Dockerイメージをビルド→GitHub Container Registry (ghcr.io)にpush→Kubernetesにデプロイ
+mainブランチへのpushでGitHub Actionsが起動し、`pnpm build` → `wrangler deploy` でCloudflare Workers (Static Assets) にデプロイされる。リポジトリSecretsに `CLOUDFLARE_API_TOKEN` と `CLOUDFLARE_ACCOUNT_ID` が必要。

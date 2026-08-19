@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wolfort",
+  "compatibility_date": "2026-08-08",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "profile.wolfort.dev",
+      "custom_domain": true
+    }
+  ]
+}
