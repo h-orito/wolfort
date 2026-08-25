@@ -29,12 +29,20 @@ export const PROJECTS: Project[] = [
     href: 'https://wolfort.net/wolf-mansion/',
     featured: true,
     started: '2018/03',
-    stack: ['Kotlin', 'Spring Boot', 'DBFlute', 'MySQL', 'Thymeleaf'],
+    stack: [
+      'TypeScript',
+      'React',
+      'React Router',
+      'Kotlin',
+      'Spring Boot',
+      'DBFlute',
+      'MySQL'
+    ],
     infra: 'Kubernetes',
     repos: [
       { label: 'GitHub', href: 'https://github.com/h-orito/wolf-mansion' }
     ],
-    notes: 'Maven→Gradle、Java→Kotlin'
+    notes: 'Maven→Gradle、Java→Kotlin、Thymeleaf→React Router(SSR) + REST API'
   },
   {
     id: 'scenario-tuker',
@@ -240,12 +248,9 @@ export const PROJECTS: Project[] = [
     image: '/image/portal.jpeg',
     href: 'https://wolfort.dev/wolf-portal/',
     started: '2018/11',
-    stack: ['Kotlin', 'Spring Boot', 'DBFlute', 'MySQL', 'Thymeleaf'],
+    stack: ['Go', 'html/template', 'MySQL'],
     infra: 'Kubernetes',
-    repos: [
-      { label: 'GitHub', href: 'https://github.com/h-orito/wolf-portal' }
-    ],
-    notes: 'Java→Kotlin'
+    notes: 'Java→Kotlin→Go、Spring Boot + DBFlute→net/http + html/template + database/sql'
   },
   {
     id: 'wordle-maker',
@@ -265,13 +270,19 @@ export const PROJECTS: Project[] = [
     category: 'ポジショニングマップ',
     description: 'ポジショニングマップ',
     image: '/image/positioning.png',
-    href: 'https://wolfort.dev/positioning-map',
+    href: 'https://positioning-map.wolfort.dev',
     started: '2024/01',
-    stack: ['TypeScript', 'Next.js', 'Firebase Realtime DB'],
-    infra: 'Kubernetes',
+    stack: [
+      'TypeScript',
+      'Next.js',
+      'Firebase Realtime DB',
+      'Cloudflare Workers'
+    ],
+    infra: 'Cloudflare',
     repos: [
       { label: 'GitHub', href: 'https://github.com/h-orito/quadrant-maker' }
-    ]
+    ],
+    notes: 'Kubernetes→Cloudflare Workers(OpenNext)移行'
   },
   {
     id: 'blog',
