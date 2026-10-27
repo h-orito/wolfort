@@ -28,12 +28,7 @@ export default function TechPage() {
           <span className='text-muted'>wolfort / tech</span>
         </nav>
 
-        <SectionHeader number='∞' label='Tech stack'>
-          <span className='block'>
-            The <em className='italic text-accent'>stack</em>
-          </span>
-          <span className='block'>behind each project.</span>
-        </SectionHeader>
+        <SectionHeader number='∞' label='Tech stack' />
 
         <p className='max-w-2xl text-base leading-relaxed text-moon'>
           各プロジェクトの言語・フレームワーク・インフラ・公開リポジトリ。
