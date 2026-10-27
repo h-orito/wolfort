@@ -18,13 +18,7 @@ export default function TopPage() {
       <div className='mx-auto flex w-full max-w-6xl flex-col gap-32 px-6 pt-24 md:gap-40 md:px-12 md:pt-32'>
         {/* 01 / PROFILE */}
         <section id='profile' className='scroll-mt-12'>
-          <SectionHeader number='01' label='Profile'>
-            <span className='block'>
-              Small things,{' '}
-              <em className='italic text-accent'>mostly wolves</em>,
-            </span>
-            <span className='block'>made after hours.</span>
-          </SectionHeader>
+          <SectionHeader number='01' label='Profile' />
 
           <div className='mt-12 grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-16'>
             <div className='md:col-span-7'>
@@ -63,12 +57,7 @@ export default function TopPage() {
 
         {/* 02 / FEATURED */}
         <section id='works' className='scroll-mt-12'>
-          <SectionHeader number='02' label='Featured'>
-            <span className='block'>Three I keep</span>
-            <span className='block'>
-              <em className='italic text-accent'>coming back</em> to.
-            </span>
-          </SectionHeader>
+          <SectionHeader number='02' label='Featured' />
 
           <div className='mt-16 flex flex-col gap-24 md:gap-32'>
             {FEATURED.map((project, i) => (
@@ -83,12 +72,7 @@ export default function TopPage() {
 
         {/* 03 / INDEX */}
         <section id='index' className='scroll-mt-12'>
-          <SectionHeader number='03' label='Other projects'>
-            <span className='block'>
-              And <em className='italic text-accent'>more</em>
-            </span>
-            <span className='block'>small things.</span>
-          </SectionHeader>
+          <SectionHeader number='03' label='Other projects' />
 
           <div className='mt-12'>
             <ProjectIndex projects={INDEX_PROJECTS} />
@@ -107,12 +91,7 @@ export default function TopPage() {
 
         {/* 04 / CONTACT */}
         <section id='contact' className='scroll-mt-12'>
-          <SectionHeader number='04' label='Contact'>
-            <span className='block'>Howl at me</span>
-            <span className='block'>
-              <em className='italic text-accent'>anytime</em>.
-            </span>
-          </SectionHeader>
+          <SectionHeader number='04' label='Contact' />
 
           <div className='mt-12'>
             <ContactList />
