@@ -164,6 +164,18 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: 'swipath',
+    title: 'つないでさんすう',
+    titleEn: 'Swipath',
+    category: 'こども向け算数パズル',
+    description: 'こども向け算数パズル',
+    image: '/profile/image/swipath.png',
+    href: 'https://swipath.wolfort.dev/',
+    started: '2026/08',
+    stack: ['TypeScript', 'Phaser', 'Vite', 'Cloudflare Workers'],
+    infra: 'Cloudflare'
+  },
+  {
     id: 'firewolf',
     title: 'FIREWOLF',
     category: '身内長期人狼 / Long-term werewolf',
