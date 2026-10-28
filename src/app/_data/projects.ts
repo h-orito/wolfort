@@ -177,7 +177,7 @@ export const PROJECTS: Project[] = [
     titleEn: 'Swipath',
     category: 'こども向け算数パズル',
     description: 'こども向け算数パズル',
-    image: '/profile/image/swipath.png',
+    image: '/image/swipath.png',
     href: 'https://swipath.wolfort.dev/',
     started: '2026/08',
     stack: ['TypeScript', 'Phaser', 'Vite', 'Cloudflare Workers'],
