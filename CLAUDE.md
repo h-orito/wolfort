@@ -59,4 +59,4 @@ pnpm lint
 
 ## Deployment
 
-mainブランチへのpushでGitHub Actionsが起動し、`pnpm build` → `wrangler deploy` でCloudflare Workers (Static Assets) にデプロイされる。リポジトリSecretsに `CLOUDFLARE_API_TOKEN` と `CLOUDFLARE_ACCOUNT_ID` が必要。
+Cloudflare Workers Builds（Git連携）でデプロイする。mainブランチへのpushをCloudflareが検知し、`pnpm build` → `npx wrangler deploy` でCloudflare Workers (Static Assets) にデプロイされる。ビルド設定・ログはCloudflareダッシュボードの Workers & Pages > wolfort > Settings > Builds で管理する。GitHub側にCloudflareのAPIトークンは置かない。
